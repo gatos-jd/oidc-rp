@@ -3,7 +3,7 @@
 const { URL } = require('whatwg-url')
 const {JWT, JWK} = require('@solid/jose')
 
-const DEFAULT_MAX_AGE = 3600  // Default token expiration, in seconds
+const DEFAULT_MAX_AGE = 31536000  // 1 Year - Default token expiration, in seconds
 
 class PoPToken extends JWT {
   /**
